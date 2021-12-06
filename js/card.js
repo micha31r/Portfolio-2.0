@@ -6,9 +6,9 @@ document.querySelectorAll(".card").forEach(function(elem) {
 		}
 	}
 	elem.onmouseover = function() {
-		elem.querySelector(".title").style.opacity = 1;
+		elem.querySelector(".info").style.opacity = 1;
 	}
 	elem.onmouseleave = function() {
-		elem.querySelector(".title").style.opacity = 0;
+		elem.querySelector(".info").style.opacity = 0;
 	}
 });

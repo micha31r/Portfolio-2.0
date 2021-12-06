@@ -101,10 +101,9 @@ p.about {
 	transition: border-color 0.2s;
 }
 
-.card .title {
+.card .info {
 	display: flex;
 	position: absolute;
-	font-weight: 500;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -112,13 +111,27 @@ p.about {
 	background: #000;
 	color: #FFF;
 	opacity: 0;
-	margin: 0;
 	text-align: center;
 	transition: opacity 0.2s;
 }
 
-.card .title span {
+.card .info > div {
+	padding: 20px;
 	margin: auto;
+}
+
+.card .info span {
+	display: block;
+}
+
+.card .info .title {
+	font-size: 1.2em;
+	font-weight: 500;
+	margin: 0 0 5px;
+}
+
+.card .info .about {
+	color: #999;
 }
 
 .card img {
