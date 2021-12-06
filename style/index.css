@@ -86,19 +86,23 @@ p.about {
 }
 
 .card-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	grid-column-gap: 25px;
-	grid-row-gap: 25px;
+	column-count: 3;
+    column-gap: 25px;
 }
 
 .card {
 	position: relative;
-	display: grid;
+	display: flex;
 	border: 1px solid #DDD;
 	border-radius: 20px;
+	break-inside: avoid;
+	margin: 0 0 25px;
 	overflow: hidden;
 	transition: border-color 0.2s;
+}
+
+.card:last-child {
+	margin: 0;
 }
 
 .card .info {
@@ -142,6 +146,13 @@ p.about {
 	border-color: transparent;
 }
 
+footer span {
+	display: block;
+	font-weight: 500;
+	max-width: 500px;
+	line-height: 1.7em;
+}
+
 @media only screen and (max-width: 900px) {
 	.d-container {
 		max-width: 1100px;
@@ -149,11 +160,14 @@ p.about {
 		padding: 40px 30px;
 		margin: auto;
 	}
+	.card-container {
+		column-count: 2;
+	}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
 	.card-container {
-		grid-template-columns: 1fr;
+		column-count: 1;
 	}
 }
 
