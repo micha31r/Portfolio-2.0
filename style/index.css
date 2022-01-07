@@ -93,7 +93,7 @@ p.about {
 .card {
 	position: relative;
 	display: flex;
-	border: 1px solid #DDD;
+	/*border: 1px solid #DDD;*/
 	border-radius: 20px;
 	break-inside: avoid;
 	margin: 0 0 25px;
