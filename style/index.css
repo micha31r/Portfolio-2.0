@@ -1,5 +1,5 @@
 :root {
-	--color-primary: rgb(82,42,251);
+	--color-primary: rgb(20,156,59);
 }
 
 * {
@@ -17,25 +17,21 @@ p {
 	line-height: 1.7em;
 }
 
-p a:hover {
-	color: #FFF;
-}
-
 p a::before {
 	content: '';
 	position: absolute;
-	top: -5%;
-	left: -5%;
-	width: 110%;
-	height: 110%;
-	border-radius: 7px;
+	bottom: -10px;
+	left: 0;
+	width: 100%;
+	height: 3px;
 	background: var(--color-primary);
-	transition: opacity 0.2s;
-	opacity: 0.15;
+	transition: transform, opacity, 0.2s;
+	opacity: 0;
 	z-index: -1;
 }
 
 p a:hover::before {
+	transform: translateY(-7px);
 	opacity: 1;
 }
 
