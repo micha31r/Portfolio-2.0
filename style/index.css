@@ -97,6 +97,10 @@ p.about {
 	transition: border-color 0.2s;
 }
 
+.card[href] {
+	cursor: pointer;
+}
+
 .card:last-child {
 	margin: 0;
 }
