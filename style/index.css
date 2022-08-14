@@ -6,6 +6,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+body {
+	background: #fffdf8;
+}
+
 a {
 	position: relative;
 	color: var(--color-primary);
@@ -90,7 +94,8 @@ p.about {
 	position: relative;
 	display: flex;
 	/*border: 1px solid #DDD;*/
-	/*border-radius: 20px;*/
+	max-height: 300px;
+	border-radius: 10px;
 	break-inside: avoid;
 	margin: 0 0 25px;
 	overflow: hidden;
@@ -140,6 +145,7 @@ p.about {
 
 .card img {
 	width: 100%;
+	object-fit: cover;
 }
 
 .card:hover {
@@ -148,7 +154,6 @@ p.about {
 
 footer span {
 	display: block;
-	font-weight: 500;
 	max-width: 500px;
 	line-height: 1.7em;
 }
