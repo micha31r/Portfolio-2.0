@@ -108,7 +108,10 @@
 						
 					</div>
 				</div>
-				<footer class="d-container"><span>© 2021-2022 Michael Ren </span></footer>
+				<footer class="d-container">© 2021-<span id="current-year"></span> Michael Ren</footer>
+				<script type="text/javascript">
+					document.querySelector("#current-year").innerText = new Date().getFullYear();
+				</script>
 				<script type="text/javascript" src="js/card.js"></script>
 				<script type="text/javascript" src="js/easterEgg.js"></script>
 			</div>

@@ -7,7 +7,7 @@
 }
 
 body {
-	background: #f3efe8;
+	background: #f6f4ec;
 }
 
 a {
@@ -152,7 +152,7 @@ p.about {
 	border-color: transparent;
 }
 
-footer span {
+footer {
 	display: block;
 	max-width: 500px;
 	line-height: 1.7em;
