@@ -5,7 +5,7 @@ const COLORS = [
 	"rgb(224,45,72)", 	// Red
 	"rgb(158,45,224)", 	// Purple
 ]
-var index = 0;
+var index = 1;
 
 document.querySelector(".name span").onclick = function() {
 	index++;

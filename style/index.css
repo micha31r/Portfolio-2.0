@@ -1,5 +1,5 @@
 :root {
-	--color-primary: rgb(20,156,59);
+	--color-primary: rgb(82,42,251);
 }
 
 * {
@@ -38,6 +38,43 @@ p a::before {
 p a:hover::before {
 	transform: translateY(-7px);
 	opacity: 1;
+}
+
+.banner {
+	background: #000;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+@keyframes color-change {
+	0% {
+		color: #FFF;
+	}
+	20% {
+		color: rgb(20,156,59);
+	}
+	40% {
+		color: rgb(82,42,251);
+	}
+	60% {
+		color: rgb(209,156,0);
+	}
+	80% {
+		color: rgb(224,45,72);
+	}
+	100% {
+		color: rgb(158,45,224);
+	}
+}
+
+.banner span {
+	animation-name: color-change;
+	animation-duration: 2s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .flex {
