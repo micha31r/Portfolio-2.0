@@ -12,7 +12,7 @@ body {
 	color: var(--color-text-primary);
 }
 
-h1 {
+h2 {
 	font-weight: normal;
 	margin: 0;
 	line-height: 1.5em
@@ -31,6 +31,7 @@ p.light {
 	display: grid;
 	grid-template-columns: 200px 1fr;
 	gap: 40px;
+	width: fit-content;
 	max-width: 1000px;
 	min-height: 100vh;
 	box-sizing: border-box;
