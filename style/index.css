@@ -1,21 +1,15 @@
-:root {
-	--color-text-primary: #000;
-	--color-text-secondary: #AAA;
-	--color-bg-primary: #FFF;
-	--color-bg-secondary: #EEE;
-}
-
 body {
 	font-family: 'Poppins', sans-serif;
-	text-transform: lowercase;
+	background: var(--color-bg-primary);
 	cursor: none;
 	color: var(--color-text-primary);
+	text-transform: lowercase;
 }
 
 h2 {
 	font-weight: normal;
 	margin: 0;
-	line-height: 1.5em
+	line-height: 1em;
 }
 
 p {
@@ -27,6 +21,17 @@ p.light {
 	color: var(--color-text-secondary);
 }
 
+a {
+	color: var(--color-text-secondary);
+	transition: color 0.2s;
+	text-decoration: none;
+	cursor: none;
+}
+
+a:hover {
+	color: var(--color-text-primary);
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: 200px 1fr;
@@ -35,17 +40,49 @@ p.light {
 	max-width: 1000px;
 	min-height: 100vh;
 	box-sizing: border-box;
-	padding: 20px;
+	padding: 0 20px;
 	margin: auto;
 }
 
 .bio {
+	display: grid;
+/*	position: sticky;*/
+/*	top: 0;*/
+	gap: 10px;
+	box-sizing: border-box;
+	padding: 30px 0;
+	margin: auto 0;
+}
+
+.bio .social {
+	font-size: 1.5em;
+	display: flex;
+	gap: 20px;
+	margin-top: 10px;
+}
+
+.bio .social a {
+	display: flex;
+	width: 1em;
+	height: 1em;
+}
+
+.bio .social a svg {
 	margin: auto;
+}
+
+.overflow-wrapper {
+	display: flex;
+	max-height: 100vh;
+	box-sizing: border-box;
+	padding: 30px 0;
+	overflow-y: auto;
 }
 
 .work {
 	display: grid;
 	width: 100%;
+	gap: 20px;
 	margin: auto;
 }
 
@@ -53,12 +90,6 @@ p.light {
 	display: flex;
 	gap: 10px;
 	width: fit-content;
-	padding: 5px 0;
-	transition: color 0.5s;
-}
-
-.work .item.selected {
-	color: var(--color-bg-primary);
 }
 
 .work .item .tag {
@@ -66,7 +97,7 @@ p.light {
 	font-size: 0.8rem;
 	background: var(--color-bg-secondary);
 	border-radius: 50px;
-	color: var(--color-text-primary);
+	color: var(--color-text-secondary);
 	padding: 5px 8px;
 	margin: auto 0;
 }
@@ -78,10 +109,43 @@ p.light {
 	left: 10px;
 	width: 20px;
 	height: 20px;
-	border-radius: 20px;
-	background: var(--color-text-primary);
+	border-radius: 100px;
+	background: rgba(0,0,0,.0);
+	backdrop-filter: invert(1) grayscale(1);
+	pointer-events: none;
 }
 
+@media only screen and (max-width: 750px) {
+	.work h2 {
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.grid {
+		grid-template-columns: 1fr;
+		gap: 60px;
+		padding: 30px 20px;
+	}
+	.overflow-wrapper {
+		max-height: none;
+		padding: 0;
+		overflow: visible;
+	}
+	.bio {
+		max-width: 200px;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.work {
+		gap: 15px;
+	}
+	.work h2 {
+		font-size: 1.1em;
+	}
+}
 
 
 
