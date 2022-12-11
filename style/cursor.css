@@ -8,5 +8,6 @@
 	border-radius: 100px;
 	background: rgba(0,0,0,.0);
 	backdrop-filter: invert(1) grayscale(1);
+	-webkit-backdrop-filter: invert(1) grayscale(1);
 	pointer-events: none;
 }
