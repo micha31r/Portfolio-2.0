@@ -45,7 +45,7 @@ h2 {
 
 @media (prefers-color-scheme: dark) {
 	.gallery img {
-		filter: brightness(0.8);
+		filter: brightness(0.9);
 	}
 }
 

@@ -1,0 +1,13 @@
+.grid-1 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid > div {
+	height: max-content;
+}
+
+@media only screen and (max-width: 700px) {
+	.grid-1 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
