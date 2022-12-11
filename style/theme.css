@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: light) {
+ 	:root {
+		--color-text-primary: #000;
+		--color-text-secondary: #999;
+		--color-bg-primary: #FFF;
+		--color-bg-secondary: #EEE;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-text-primary: #FFF;
+		--color-text-secondary: #777;
+		--color-bg-primary: #000;
+		--color-bg-secondary: #222;
+	}
+}
