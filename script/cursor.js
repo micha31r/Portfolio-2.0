@@ -5,8 +5,8 @@ const marginX = 10;
 const marginY = 10;
 const cursorSize = 20;
 
-let mouseX = 20;
-let mouseY = 20;
+let mouseX = -10;
+let mouseY = -10;
 let isSelected = false;
 let target = null;
 
