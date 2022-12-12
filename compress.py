@@ -15,7 +15,7 @@ for index, path in enumerate(paths):
 	os.makedirs(folder_path, exist_ok=True)
 
 	save_path = os.path.join(folder_path, name+".jpg")
-	img.save(save_path, quality=30, optimize=True)
+	img.save(save_path, quality=20, optimize=True)
 	img.close()
 
 	print(f"Compressed {name_full} ({index+1}/{len(paths)})")
