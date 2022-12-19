@@ -44,7 +44,10 @@ function sequentialLoad(index, list) {
     if (status === false || status === 0) {
         loadNext();
     } else if (status === 1) {
-        elem.onload = loadNext;
+        elem.onload = function(){
+            elem.classList.add("show"); // show image after it's loaded
+            loadNext();
+        }
     }
 }
 
