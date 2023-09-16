@@ -1,6 +1,6 @@
 const cursor = document.querySelector("#cursor");
 const delta = 1/120;
-const speed = 10;
+const speed = 20;
 const marginX = 10;
 const marginY = 10;
 const cursorSize = 20;
